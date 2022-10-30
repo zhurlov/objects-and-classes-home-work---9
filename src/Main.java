@@ -23,21 +23,19 @@ public class Main {
         //name = "vyacheslav";
         //surname = "grigoriev";
 
-
-////////// Объект Книга.
-        Book grigory = new Book("smart student","vyacheslav grigoriev", 1988);
-        //grigory.name = "grigory";
-        //grigory.publication = 1988;
-        //grigory.setPublication(2003);
-        System.out.println( "книга " + grigory.getName() + " автор "  + grigory.getAuthor() + " ,опубликована в " + grigory.getPublication() + "г.");
-
-
 ////////// Объект Автор.
         Author vyacheslav = new Author("vyacheslav", "grigoriev");
         //vyacheslav.name = "vyacheslav";
         //vyacheslav.surname = "grigoriev";
         System.out.println("автор книги - " + vyacheslav.getName() + "." + vyacheslav.getSurname());
         //System.out.println("год издания " + grigory.getPublication() + ", Автор книги " + vyacheslav.getName() + "." + vyacheslav.getSurname());
+
+////////// Объект Книга.
+        Book grigory = new Book("smart student", vyacheslav ,1988);
+        //grigory.name = "grigory";
+        //grigory.publication = 1988;
+        grigory.setPublication(2003);
+        System.out.println( "книга " + grigory.getName() + " автор "  + vyacheslav.getName() + " " + vyacheslav.getSurname() + " ,опубликована в " + grigory.getPublication() + "г.");
 
     }
 
