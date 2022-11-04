@@ -27,7 +27,9 @@ public class Main {
         Author vyacheslav = new Author("vyacheslav", "grigoriev");
         //vyacheslav.name = "vyacheslav";
         //vyacheslav.surname = "grigoriev";
-        System.out.println("автор книги - " + vyacheslav.getName() + "." + vyacheslav.getSurname());
+        System.out.println("автор книги - " + vyacheslav.getName() + " " + vyacheslav.getSurname());
+        System.out.println(vyacheslav);
+        System.out.println(vyacheslav.equals(vyacheslav));
         //System.out.println("год издания " + grigory.getPublication() + ", Автор книги " + vyacheslav.getName() + "." + vyacheslav.getSurname());
 
 ////////// Объект Книга.
@@ -36,6 +38,8 @@ public class Main {
         //grigory.publication = 1988;
         grigory.setPublication(2003);
         System.out.println( "книга " + grigory.getName() + " автор "  + vyacheslav.getName() + " " + vyacheslav.getSurname() + " ,опубликована в " + grigory.getPublication() + "г.");
+        System.out.println(grigory);
+        System.out.println(grigory.equals(grigory));
 
     }
 
